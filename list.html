@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>手机网站模板</title>
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="css/cate.css" rel="stylesheet" type="text/css" />
+    <link href="css/iscroll.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript">
+var myScroll;
+
+function loaded() {
+
+    myScroll = new iScroll('wrapper', {
+        snap: true,
+        momentum: false,
+        hScrollbar: false,
+        onScrollEnd: function () {
+            document.querySelector('#indicator > li.active').className = '';
+            document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+        }
+    });
+
+}
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+</head>
+
+<body>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <div class="mian-list">
+        <ul>
+            <li>
+                <a href="">
+                    <h2>不饱和乙烯原料</h2>
+                    <p>收到辐射之后可发生铰链、锻炼形成不饱和技术</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <h2>今年化工并购交易总额将达到
+600亿美元</h2>
+                    <p>受辐射后可发生交联、锻链、形成不饱和基是</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <h2>化工产品市场波动加剧
+</h2>
+                    <p>收到辐射之后可发生铰链、锻炼形成不饱和技术</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <h2>煤化工合成氨的工艺技术总结</h2>
+                    <p>收到辐射之后可发生铰链、锻炼形成不饱和技术</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <h2>掘金化工新材料“进口替代+电商平台”</h2>
+                    <p>收到辐射之后可发生铰链、锻炼形成不饱和技术</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <h2>掘金化工新材料“进口替代+电商平台”</h2>
+                    <p>收到辐射之后可发生铰链、锻炼形成不饱和技术</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li>
+                <div class="menu_li">首页</div>
+                <img class="line" src="images/line.png" width="1">
+                <!-- <span>
+                <img src="images/navbg5.png" width="100%">
+                <div>
+                    <a href="">加入龙国</a>
+                    <a href="">加入龙国</a>
+                    <a href="">加入龙国</a>
+                    <a href="">加入龙国</a>
+                    <a href="">加入龙国</a>
+                </div>
+            </span>
+            -->
+        </li>
+        <li>
+            <div class="menu_li">产品信息</div>
+            <img class="line" src="images/line.png" width="1" />
+            <!-- <span>
+            <img src="images/navbg5.png" width="100%">
+            <div>
+                <a href="">加入龙国</a>
+                <a href="">加入龙国</a>
+                <a href="">加入龙国</a>
+                <a href="">加入龙国</a>
+                <a href="">加入龙国</a>
+            </div>
+        </span>
+        -->
+    </li>
+    <li>
+        <div class="menu_li">加入龙国</div>
+        <img class="line" src="images/line.png" width="1">
+        <!-- <span>
+        <img src="images/navbg5.png" width="100%">
+        <div>
+            <a href="">加入龙国</a>
+            <a href="">加入龙国</a>
+            <a href="">加入龙国</a>
+            <a href="">加入龙国</a>
+            <a href="">加入龙国</a>
+        </div>
+    </span>
+    -->
+</li>
+<li>
+    <div class="menu_li">更多</div>
+    <span id="slidenav">
+        <img src="images/navbg5.png" width="100%">
+        <div>
+            <a href="">更多</a>
+            <a href="">更多</a>
+            <a href="">更多</a>
+        </div>
+    </span>
+</li>
+</ul>
+</div>
+</body>
+</html>

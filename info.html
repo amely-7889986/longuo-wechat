@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>手机网站模板</title>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<link href="css/cate.css" rel="stylesheet" type="text/css" />
+<link href="css/iscroll.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript">
+var myScroll;
+
+function loaded() {
+
+	myScroll = new iScroll('wrapper', {
+		snap: true,
+		momentum: false,
+		hScrollbar: false,
+		onScrollEnd: function () {
+			document.querySelector('#indicator > li.active').className = '';
+			document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+		}
+	});
+
+}
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+</head>
+<body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<div class="page">
+    <div class="page-tit">不饱和聚乙烯原料</div>
+    <div class="date">2015-06-04</div>
+    <div class="page-info">
+        <img src="images/page-info.jpg">
+        <p>聚乙烯是结晶热塑性树脂。它们的化学结构、分子量、聚合度和其他性能很大程度上均依赖于使用的聚合方法。聚合方法决定了支链的类型和支链度。结晶度取决件分子链的规整程度与其所经历的热历史。
+聚乙烯对于环境应力(化学与机械作用)是很敏感的，耐热老化性差于聚合物的化学结构和加工条。聚乙烯可用一般热塑性塑料的成型方法(见塑料加工)加工。用途十分广泛，主要用来制造薄膜、包装材料、容器、管道、单丝、电线电缆、日用品等，并可作为电视、雷达等的高频绝缘材料。随着石油化工的发展，聚乙烯生产得到迅速发展，产量约占塑料总产量的1/4。1983年世界聚乙烯总生产能力为24.65Mt，在建装置能力为3.16Mt。2011年最新统计结果，全球产能达到96Mt，聚乙烯生产的发展趋势显示，生产消费逐步向亚洲地区转移，中国日渐成为最重要的消费市场。
+聚乙烯(PE)塑料一种，我们常常提的方便袋就是聚乙烯(PE)。聚乙烯是结构最简单的高分子，也是应用最广泛的高分子材料。它是由重复的–CH2–单元连接而成的。聚乙烯是通过乙烯（CH2=CH2 ）的发生加成聚合反应而成的。
+聚乙烯的性能取决于它的聚合方式。在中等压力(15-30大气压)有机化合物催化条件下进行Ziegler-Natta聚合而成的是高密度聚乙烯(HDPE)。这种条件下聚合的聚乙烯分子是线性的，且分子链很长，分子量高达几十万。如果是在高压力(100-300MPa)，高温(190–210C)，过氧化物催化条件下自由基聚合，生产出的则是低密度聚乙烯(LDPE)，它是支链化合结构的。
+        </p>
+    </div>
+</div>
+<div id="menu">
+        <ul>
+            <li>
+                <div class="menu_li">首页</div>
+                <img class="line" src="images/line.png" width="1">
+                <!-- <span>
+                <img src="images/navbg5.png" width="100%">
+                <div>
+                    <a href="">加入龙国</a>
+                    <a href="">加入龙国</a>
+                    <a href="">加入龙国</a>
+                    <a href="">加入龙国</a>
+                    <a href="">加入龙国</a>
+                </div>
+            </span>
+            -->
+        </li>
+        <li>
+            <div class="menu_li">产品信息</div>
+            <img class="line" src="images/line.png" width="1" />
+            <!-- <span>
+            <img src="images/navbg5.png" width="100%">
+            <div>
+                <a href="">加入龙国</a>
+                <a href="">加入龙国</a>
+                <a href="">加入龙国</a>
+                <a href="">加入龙国</a>
+                <a href="">加入龙国</a>
+            </div>
+        </span>
+        -->
+    </li>
+    <li>
+        <div class="menu_li">加入龙国</div>
+        <img class="line" src="images/line.png" width="1">
+        <!-- <span>
+        <img src="images/navbg5.png" width="100%">
+        <div>
+            <a href="">加入龙国</a>
+            <a href="">加入龙国</a>
+            <a href="">加入龙国</a>
+            <a href="">加入龙国</a>
+            <a href="">加入龙国</a>
+        </div>
+    </span>
+    -->
+</li>
+<li>
+    <div class="menu_li">更多</div>
+    <span id="slidenav">
+        <img src="images/navbg5.png" width="100%">
+        <div>
+            <a href="">更多</a>
+            <a href="">更多</a>
+            <a href="">更多</a>
+        </div>
+    </span>
+</li>
+</ul>
+</div>
+
+</body>
+</html>

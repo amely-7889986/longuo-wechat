@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>手机网站模板</title>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<link href="css/cate.css" rel="stylesheet" type="text/css" />
+<link href="css/iscroll.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript">
+var myScroll;
+
+function loaded() {
+
+	myScroll = new iScroll('wrapper', {
+		snap: true,
+		momentum: false,
+		hScrollbar: false,
+		onScrollEnd: function () {
+			document.querySelector('#indicator > li.active').className = '';
+			document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+		}
+	});
+
+}
+
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+
+</head>
+
+<body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<div class="banner">
+	<div id="wrapper">
+		<div id="scroller">
+			<ul id="thelist">
+				<li><a href="javascript:void(0)"><img src="images/banner.jpg" /></a></li>
+				<li><a href="javascript:void(0)"><img src="images/3.jpg" /></a></li>
+				<li><a href="javascript:void(0)"><img src="images/4.jpg" /></a></li>
+				<li><a href="javascript:void(0)"><img src="images/2.jpg" /></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="nav">
+		<ul id="indicator">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<div class="clr"></div>
+</div>
+
+<div class="mainmenu">
+	<div>
+		<ul>
+			<li style="background: #00bef2"><a href="/" ><img src="images/delivery.png" /><p>应用推荐</p></a></li>
+			<li style="background: #698be1"><a href="/" ><img src="images/icon-custom.png" /><p>供应定制</p></a></li>
+			<li style="background: #ff8a4d"><a href="/" ><img src="images/icon-manage.png" /><p>企业管理</p></a></li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li style="background: #8d67e0"><a href="/" ><img src="images/bigecharts.png" /><p>大数据分析</p></a></li>
+			<li style="background: #4971f4"><a href="/" ><img src="images/icon-news.png" /><p>行业资讯</p></a></li>
+			<li style="background: #f7aa22"><a href="/" ><img src="images/icon-logistics.png" /><p>大物流</p></a></li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript">
+var count = document.getElementById("thelist").getElementsByTagName("img").length;
+
+var count2 = document.getElementsByClassName("menuimg").length;
+for(i=0;i<count;i++){
+	document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+}
+document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+
+setInterval(function(){
+	myScroll.scrollToPage('next', 0,400,count);
+},3500 );
+
+window.onresize = function(){
+	for(i=0;i<count;i++){
+		document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+	}
+	document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+}
+</script>
+
+
+<style type="text/css">
+
+</style>
+
+<div id="menu">
+	<ul>
+		<li>
+			<div class="menu_li">首页</div>
+			<img class="line" src="images/line.png" width="1">
+			<!-- <span>
+				<img src="images/navbg5.png" width="100%">
+				<div>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+				</div>
+			</span> -->
+		</li>
+		<li>
+			<div class="menu_li">产品信息</div>
+			<img class="line" src="images/line.png" width="1" />
+			<!-- <span>
+				<img src="images/navbg5.png" width="100%">
+				<div>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+				</div>
+			</span> -->
+		</li>
+		<li>
+			<div class="menu_li">加入龙国</div>
+			<img class="line" src="images/line.png" width="1">
+			<!-- <span>
+				<img src="images/navbg5.png" width="100%">
+				<div>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+					<a href="">加入龙国</a>
+				</div>
+			</span> -->
+		</li>
+		<li>
+			<div class="menu_li">更多</div>
+			<span id="slidenav">
+				<img src="images/navbg5.png" width="100%">
+				<div>
+					<a href="">更多</a>
+					<a href="">更多</a>
+					<a href="">更多</a>
+				</div>
+			</span>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
