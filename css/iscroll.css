@@ -278,8 +278,61 @@
 }
 /*产品列表*/
 .supply-list{
-	max-width: 1000px;
+	width: 96%;
+	margin: 2% auto 60px auto;
 }
 .supply-list li{
-	background: #ffffff
+	display: block;
+	overflow: hidden;
+	background: #f7f7f7;
+	padding: 2%;
+	margin-bottom: 4%;
+}
+.supply-list li a{
+	color: #8c8b8b;
+}
+.supply-fixed{
+	max-width: 1000px;
+}
+[class*="sup-list-"] {
+  width: 100%;
+  float: left;
+  padding: 3px 0 3px 0;
+  position: relative;
+}
+[class*="sup-list-"] + [class*="sup-list-"]:last-child {
+  float: right;
+}
+[class*="sup-list-"] + [class*="sup-list-"].sup-list-end {
+  float: left;
+}
+.sup-list-text-right{
+	text-align: right;
+}
+.sup-list-text-left{
+	text-align: left;
+}
+@media only screen {
+.sup-list-sl1{
+	width: 75%;
+	color: #4998f4;
+}
+.sup-list-sl2{
+	width: 25%;
+}
+.sup-list-sl3{
+	width: 33.33333%;
+}
+.sup-list-sl4{
+	width: 50%;
+}
+.sup-list-sl5{
+	width: 60%
+}
+.sup-list-sl6{
+	width: 40%;
+}
+.sup-list-sl7{
+	width: 100%;
+}
 }
